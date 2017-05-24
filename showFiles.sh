@@ -2,9 +2,9 @@
 
 shFiles(){
 
-	pathFile="/mnt/c/Users/Patryk/Desktop"
+	pathFile=$1
 
-	if [$pathFile -n]; #sprawdzanie czy zmienna nie jest pusta
+	if [[-n $pathFile]]; #sprawdzanie czy zmienna nie jest pusta
 	then 
 		echo "nie podano ścieżki"
 	else 
@@ -13,10 +13,11 @@ shFiles(){
 		
 		echo -n "liczba plików w: $pathFile to: " # -n brak przejścia do nowej lini
 		find  $pathFile -maxdepth 1 | wc -l 
-		ls --color=auto -l #koloruje i pokazuje date modyfikacji, sortuje
+		ls --color=auto -l $pathFile #koloruje i pokazuje date modyfikacji, sortuje
 		
 		
 	fi
 }
 
-shFiles
+shFiles "/mnt/c/Users/pdroz/Desktop"
+
