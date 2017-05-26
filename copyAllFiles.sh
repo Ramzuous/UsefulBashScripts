@@ -5,19 +5,10 @@ cpyFiles(){
 	source=$1
 	dest=$2
 
-	filesAll=`find $source -maxdepth 1`
+	filesAll=`find $source -maxdepth 1 -mindepth 1`
 	
-	files=$(echo $filesAll | tr "/" "\n")
-	a=1
-	for fileTab in $files
-	do
-		echo ">$filesTab"
-		a=$[a+1]
-	done
-	
-	echo "$filesAll"
-	echo "$a"
+	cp -r $filesAll $dest
+
 }
 
-cpyFiles "/mnt/c/Users/Patryk/Desktop/test/" #Documents/CV
-
+cpyFiles "/mnt/c/Users/Patryk/Desktop/test/" "/mnt/c/Users/Patryk/Desktop/result2/" #Documents/CV
