@@ -18,7 +18,10 @@ checkDirs(){
 	filesAll=`find $source -maxdepth 1 -mindepth 1 -type d`
 	
 	echo "$filesAll"
+	
 }
 
 checkDirs "/mnt/c/Users/Patryk/Desktop/test/"
 cpyFiles "/mnt/c/Users/Patryk/Desktop/test/"
+
+cd /mnt/c/

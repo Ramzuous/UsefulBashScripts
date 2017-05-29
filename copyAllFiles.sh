@@ -5,7 +5,7 @@ cpyFiles(){
 	source=$1
 	dest=$2
 
-	filesAll=`find $source -maxdepth 1 -mindepth 1 -type f `
+	filesAll=`find $source -mindepth 1`
 	
 	cp -r $filesAll $dest
 
