@@ -12,3 +12,5 @@ upgrade(){
 }
 
 upgrade "/mnt/c/Users/Patryk/Desktop/test" "/mnt/c/Users/Patryk/Desktop/result2"
+
+echo "Aktualizacja została wykonana..."
