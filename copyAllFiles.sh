@@ -9,6 +9,8 @@ cpyFiles(){
 	
 	cp -r $filesAll $dest
 
+	echo "Wszystkie pliki z $source skopiowano do $dest"
+	
 }
 
-cpyFiles "/mnt/c/Users/Patryk/Desktop/test/" "/mnt/c/Users/Patryk/Desktop/result2/"
+cpyFiles "/mnt/c/Users/Patryk/Desktop/test/" "/mnt/c/Users/Patryk/Desktop/result/"
