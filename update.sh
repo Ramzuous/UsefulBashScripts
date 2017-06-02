@@ -9,8 +9,8 @@ upgrade(){
 		cp -r $file $dest 
 		
 	done;
+
+	echo "Plik $dest zostal zaaktualizowany o pliki z $source"
 }
 
-upgrade "/mnt/c/Users/Patryk/Desktop/test" "/mnt/c/Users/Patryk/Desktop/result2"
-
-echo "Aktualizacja została wykonana..."
+upgrade $1 $2

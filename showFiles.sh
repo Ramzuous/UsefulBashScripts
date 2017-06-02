@@ -1,7 +1,12 @@
 #!/bin/bash
 
-pathFile=$1
+shFiles(){
 
-echo -n "liczba plikÛw w: $pathFile to: " # -n brak przejúcia do nowej lini
-find  $pathFile -maxdepth 1 | wc -l 
-ls --color=auto -l $pathFile #koloruje i pokazuje date modyfikacji, sortuje
+	pathFile=$1
+		
+	echo -n "liczba plik√≥w w: $pathFile to: " # -n brak przej≈õcia do nowej lini
+	find  $pathFile -maxdepth 1 | wc -l 
+	ls --color=auto -l $pathFile #koloruje i pokazuje date modyfikacji, sortuje
+
+}
+shFiles $1

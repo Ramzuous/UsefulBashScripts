@@ -13,4 +13,4 @@ cpyFiles(){
 	
 }
 
-cpyFiles "/mnt/c/Users/Patryk/Desktop/test/" "/mnt/c/Users/Patryk/Desktop/result/"
+cpyFiles $1 $2
